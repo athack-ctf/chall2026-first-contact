@@ -1,6 +1,6 @@
-# Chall - Your Challenge Title
+# First Contact - Xyrathian Surveillance Network
 
-> A brief description of the challenge
+> Web reconnaissance challenge teaching client-side inspection and storage vulnerability
 
 ## Challenge Type
 
@@ -9,35 +9,22 @@
 
 ## Design Type
 
-- [X] **Black**-Box
+- [X] **Black**-Box (but very primitive - webpage source code exploration)
 - [ ] **White**-Box
 
 ## Designer(s)
 
-- Ada Lovelace
-- Barbara Liskov
+- Oleksiy Savytskyy
 
 ## Description
 
-A high-level overview intended to clarify the concept and intuition behind the challenge, outlining its educational
-goals and the skills it aims to test in participants.
+**Beginner web challenge (difficulty 0-1/10)** teaching browser inspector tools through an alien surveillance dashboard. Participants learn to inspect HTML/CSS/JS using browser DevTools to find two flags: **Flag 1** is hidden on `/diagnostics.html` (discovered via CSS comment hint, reversed string encoding) teaching that developers leave artifacts in production; **Flag 2** is split across JavaScript config, cookies, and localStorage teaching that client-side storage is never secure. Static HTML/CSS/JS application with no backend, solvable in 3-5 primitive steps per flag using only a browser.
 
 **IMPORTANT:** This description will **NOT** be shared with participants.
 
 ## Category(ies)
 
-- `pwn`
-- `re`
 - `web`
-- `stegano`
-- `env`
-- `crypto`
-- `osint`
-- `web3`
-- `ai`
-- `android`
-- `auto`
-- `misc`
 
 ---
 

@@ -1,10 +1,4 @@
 # FLAGS
 
-- `ATHACKCTF{y0ur1stflagGoesHere}` 
-- `ATHACKCTF{y0ur2ndflagGoesHere}`
-- `...`
-
-## IMPORTANT
-Unless it's impossible or technically difficult, flags should follow the format `ATHACKCTF{__________}` 
-
-(as shown in the examples above). The random value within the brackets should be sufficiently long and non-trivial.
+- `ATHACKCTF{h1dd3n_d3v_p4g3s_l34k_s3cr3ts}`
+- `ATHACKCTF{cl13nt_s1d3_st0r4g3_1s_n3v3r_s3cur3}`

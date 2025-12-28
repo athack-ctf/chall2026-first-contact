@@ -1,10 +1,11 @@
-The description of your challenge as seen by participants in CTFd. Try to make it feel within the theme
-of the event...
+# First Contact
 
----
-If your challenge is a multi-flag one (i.e., it consists of a sequence of sub-challenges each rewarded with
-its own flag), requiring a different description for each sub-challenge, then have your descriptions split as 
-done with this paragraph, and the next one.
+Recently, our deep space monitoring system detected that we are being watched by an unknown alien civilization. We found what appears to be their surveillance dashobard. Your task is to explore this interface and see if you can retrieve anything of value.
 
----
-Obviously, for each sub-challenge, you should provide its flag value in [solution/FLAGS.md](solution/FLAGS.md).
+-----
+
+The page itself doesn't seem to be much interactive. See if you can find ways to access more data than visible on the page
+
+----
+
+Can you figure out how the data is accessed by this page?
