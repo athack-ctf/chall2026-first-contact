@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0e1a;
+    color: #00ff88;
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #0f1419;
+    border: 2px solid #00ff88;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00ff88;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+.sector {
+    color: #00cc70;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Fixed alignment for /diagnostics.html button panel */
+.status-panel {
+    background: #141921;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border-left: 4px solid #00ff88;
+}
+
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #1a2332;
+}
+
+.status-item:last-child {
+    border-bottom: none;
+}
+
+.label {
+    color: #00cc70;
+}
+
+.value {
+    color: #ffffff;
+}
+
+.status-ok {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.data-feed {
+    margin-bottom: 25px;
+}
+
+.data-feed h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #00ff88;
+}
+
+.message {
+    background: #141921;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.timestamp {
+    color: #6699cc;
+    margin-right: 10px;
+}
+
+.content {
+    color: #cccccc;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #00ff88;
+    color: #00cc70;
+    font-size: 0.9em;
+}
+
+/* Diagnostic page styles */
+.diagnostic-panel {
+    background: #141921;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: 2px solid #ff8800;
+}
+
+.diagnostic-panel h2 {
+    color: #ff8800;
+    margin-bottom: 20px;
+}
+
+.diagnostic-btn {
+    background: #00ff88;
+    color: #0a0e1a;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.diagnostic-btn:hover {
+    background: #00cc70;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+.hint-text {
+    margin-top: 20px;
+    padding: 10px;
+    background: #0f1419;
+    border-left: 3px solid #6699cc;
+    color: #6699cc;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.diagnostic-output {
+    background: #141921;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 4px solid #00cc70;
+}
+
+.diagnostic-output h3 {
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+
+.diagnostic-output p {
+    color: #cccccc;
+}
