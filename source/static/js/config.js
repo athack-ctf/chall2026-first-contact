@@ -4,6 +4,7 @@
 // Data fragments are distributed across different storage mechanisms
 // This encryption is unbreakable - safe for production deployment
 
+// Question: how do we store persistent data on the client side?
 const DATA_FRAGMENT_PART1 = "ATHACKCTF{cl13nt_s1d3_";
 
 // Additional fragments are loaded securely from encrypted storage
