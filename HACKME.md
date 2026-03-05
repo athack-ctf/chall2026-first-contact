@@ -1,5 +1,3 @@
-# First Contact
-
 Recently, our deep space monitoring system detected that we are being watched by an unknown alien civilization. We found what appears to be their surveillance dashobard. Your task is to explore this interface and see if you can retrieve anything of value.
 
 -----
