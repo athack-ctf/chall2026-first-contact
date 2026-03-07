@@ -14,10 +14,11 @@ description: |
   Recently, our deep space monitoring system detected that we are being watched by an unknown alien civilization. We found what appears to be their surveillance dashobard. Your task is to explore this interface and see if you can retrieve anything of value.
 
   -----
+
   ### Part 2/2
 
   Can you figure out how the data is accessed by this page?
-  
+
   [Start your challenge instance](https://instancer.athackctf.com/chall2026-first-contact/create)
 
 # The field connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
