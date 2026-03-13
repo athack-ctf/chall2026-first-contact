@@ -1,0 +1,11 @@
+name: chall2026-first-contact
+
+services:
+  first-contact:
+    image: athack-ctf/chall2026-first-contact:latest
+    container_name: chall2026-first-contact
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2026:5000"

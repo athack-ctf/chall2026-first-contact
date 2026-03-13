@@ -1,8 +1,0 @@
-services:
-  web:
-    build: .
-    image: first-contact-challenge
-    container_name: first-contact
-    ports:
-      - "8080:5000"
-    restart: unless-stopped
