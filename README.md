@@ -1,69 +1,90 @@
-# First Contact - Xyrathian Surveillance Network
+# @Hack 2026: First Contact
 
-> Web reconnaissance challenge teaching client-side inspection and storage vulnerability
+> Authored by [Oleksiy](https://github.com/asquik).
 
-## Challenge Type
+- **Category**: `Web`
+- **Solves**: `flag1: 55/120, flag2: 92/120`
+- **Tags**: `beginner`
+- **Protocol**: `http`
 
-- [ ] **OFF**line
-- [X] **ON**line
+> ### First Contact
+>
+> Recently, our deep space monitoring system detected that we are being watched by an unknown alien civilization. We
+> found what appears to be their surveillance dashboard. Your task is to explore this interface and see if you can
+> retrieve anything of value.
+>
+> #### Part 1/2
+>
+> The page itself doesn't seem much interactive. See if you can find ways to access more data than visible on the
+> page
+>
+> #### Part 2/2
+>
+> Can you figure out how the data is accessed by this page?
+>
 
-## Design Type
+## Access a dockerized instance
 
-- [X] **Black**-Box (but very primitive - webpage source code exploration)
-- [ ] **White**-Box
+Run challenge container using docker compose
 
-## Designer(s)
+```
+docker compose up -d
+```
 
-- Oleksiy Savytskyy
+Open below URL on your browser
 
-## Description
+```
+http://localhost:53007/
+```
 
-**Beginner web challenge (difficulty 0-1/10)** teaching browser inspector tools through an alien surveillance dashboard. Participants learn to inspect HTML/CSS/JS using browser DevTools to find two flags: **Flag 1** is hidden on `/diagnostics.html` (discovered via CSS comment hint, reversed string encoding) teaching that developers leave artifacts in production; **Flag 2** is split across JavaScript config, cookies, and localStorage teaching that client-side storage is never secure. Static HTML/CSS/JS application with no backend, solvable in 3-5 primitive steps per flag using only a browser.
+<details>
+<summary>
+How to stop/restart challenge?
+</summary>
 
-**IMPORTANT:** This description will **NOT** be shared with participants.
+To stop the challenge run
 
-## Category(ies)
+```
+docker compose stop
+```
 
-- `web`
+To restart the challenge run
+
+```
+docker compose restart
+```
+
+</details>
+
+## Reveal Flag(s)
+
+Did you try solving this challenge?
+<details>
+<summary>
+Yes
+</summary>
+
+Did you **REALLY** try solving this challenge?
+
+<details>
+<summary>
+Yes, I promise!
+</summary>
+
+- Flag 1: `ATHACKCTF{h1dd3n_d3v_p4g3s_l34k_s3cr3ts}`
+- Flag 2: `ATHACKCTF{cl13nt_s1d3_st0r4g3_1s_n3v3r_s3cur3}`
+
+</details>
+</details>
+
 
 ---
 
-# Project Structure
+## About @Hack
 
-## 1. HACKME.md
+[@Hack](https://athackctf.com/) is an annual CTF (Capture The Flag) competition hosted
+by [HEXPLOIT ALLIANCE](https://hexploit-alliance.com/) and [TECHNATION](https://technationcanada.ca/) at Concordia
+University in Montreal, Canada.
 
-- **[HACKME.md](HACKME.md)**: A teaser or description of the challenge to be shared with participants (in CTFd).
-
-## 2. Source Code
-
-- **[source/README.md](source/README.md)**: Comprehensive instructions on how to have a running instance of your
-  challenge from the source.
-  If your project includes multiple subprojects, please consult us (Alin and William).
-- **[source/*](source/)**: Your source code.
-
-## 3. Offline Artifacts [OPTIONAL]
-
-> **NOTE:** This directory is optional for online challenges. However, if offline artifacts need to be provided as well, 
-> they should be placed here.
-
-- **[offline-artifacts/*](offline-artifacts/)**: All files intended to be downloaded by participants
-  (e.g., a flagless version of the running binary executable of a pwn challenge).
-  For large files (exceeding 100 MB), please consult us (Alin and William).
-
-## 4. Solution
-
-- **[solution/README.md](solution/README.md)**: A detailed writeup of the working solution.
-- **[solution/FLAGS.md](solution/FLAGS.md)**: A single markdown file listing all (up-to-date) flags.
-- **[solution/*](solution/)**: Any additional files or code necessary for constructing a reproducible solution for the
-  challenge (e.g., `PoC.py`, `requirement.txt`, etc.).
-
-## 5. Dockerization
-
-> **NOTE:** For deployment on @Hack's infrastructure, online challenges must be containerized.
-> However, this requirement does not apply during the early stages of challenge development, so do not hesitate to start
-> building your online challenge if you are unfamiliar with containerization.
-> We (Anis and Hugo) will take care of it.
-
-- **[source/Dockerfile](source/Dockerfile)**: Needed for building a containerized image of the online challenge.
-- **[source/docker-compose.yml](source/docker-compose.yml)**: Needed for a configuration-free run of the online
-  challenge
+---
+[Check more challenges from @Hack 2026](https://github.com/athack-ctf/AtHackCTF-2026-Challenges).

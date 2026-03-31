@@ -6,6 +6,6 @@ services:
     container_name: chall2026-first-contact
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: source/Dockerfile
     ports:
-      - "2026:5000"
+      - "53007:5000"
